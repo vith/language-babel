@@ -877,6 +877,15 @@
               "match": "[_$a-zA-Z][$\\w]*"
             },
             {
+              "name": "meta.parameter.flowtype.js",
+              "begin": ":",
+              "end": "(?=[,)=])",
+              "beginCaptures": {
+                "0": { "name": "punctuation.separator.flowtype.js" }
+              },
+              "contentName": "storage.type.js"
+            },
+            {
               "name": "punctuation.separator.parameter.function.js",
               "match": ","
             },
